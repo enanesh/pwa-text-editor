@@ -31,10 +31,23 @@ module.exports = () => {
 
     module: {
       rules: [
+      // CSS loader
           {
             test: /\.css$/i,
             //This ones are npm packages that need to be installed
             use: ['style-loader', 'css-loader'],
+        },
+        // Babel loader
+        {
+          test: /\.m?js$/,
+          exclude: /(node_modules|bower_components])/,
+          // We use babel-loader in order to use ES6.
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+            },
+          },
         },
         
         
