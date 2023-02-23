@@ -37,6 +37,11 @@ module.exports = () => {
             //This ones are npm packages that need to be installed
             use: ['style-loader', 'css-loader'],
         },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          //this is part of webpack no need to install new dependencies
+          type: 'asset/resource',
+        },
         // Babel loader
         {
           test: /\.m?js$/,
