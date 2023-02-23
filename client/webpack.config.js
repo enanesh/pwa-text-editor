@@ -13,16 +13,30 @@ module.exports = () => {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
+    //sets the name of the directory and wich directory you wanted to put it in  
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+
+    //processing modules after they have being model
     plugins: [
+
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Webpack Plugin',
+      }),
       
     ],
 
     module: {
       rules: [
+          {
+            test: /\.css$/i,
+            //This ones are npm packages that need to be installed
+            use: ['style-loader', 'css-loader'],
+        },
+        
         
       ],
     },
