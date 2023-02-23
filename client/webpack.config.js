@@ -15,7 +15,7 @@ module.exports = () => {
     },
     //sets the name of the directory and wich directory you wanted to put it in  
     output: {
-      filename: '[name].bundle.js',
+      filename: '[name].bundle.js',//.[name]bundles generates a bundle for each entry
       path: path.resolve(__dirname, 'dist'),
     },
 
