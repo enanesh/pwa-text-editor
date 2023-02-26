@@ -24,7 +24,7 @@ module.exports = () => {
 
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Webpack Plugin',
+        title: 'JATE',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -33,12 +33,14 @@ module.exports = () => {
       new WebpackPwaManifest({
         name: 'Just Another Text Editor',
         id: '/',
-        short_name: 'jate',
+        short_name: 'JATE',
         description: 'just another text editor!',
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
+        fingerprints: false,
+        inject:true,
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -47,6 +49,8 @@ module.exports = () => {
           },
         ],
       }),
+
+
 
 
     ],
@@ -73,6 +77,7 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime']
             },
           },
         },
