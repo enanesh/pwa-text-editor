@@ -26,16 +26,38 @@ module.exports = () => {
         template: './index.html',
         title: 'Webpack Plugin',
       }),
-      
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js'
+      }),
+      new WebpackPwaManifest({
+        name: 'Just Another Text Editor',
+        id: '/',
+        short_name: 'jate',
+        description: 'just another text editor!',
+        background_color: '#7eb4e2',
+        theme_color: '#7eb4e2',
+        start_url: './',
+        publicPath: './',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
+      }),
+
+
     ],
 
     module: {
       rules: [
-      // CSS loader
-          {
-            test: /\.css$/i,
-            //This ones are npm packages that need to be installed
-            use: ['style-loader', 'css-loader'],
+        // CSS loader
+        {
+          test: /\.css$/i,
+          //This ones are npm packages that need to be installed
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -54,8 +76,8 @@ module.exports = () => {
             },
           },
         },
-        
-        
+
+
       ],
     },
   };
