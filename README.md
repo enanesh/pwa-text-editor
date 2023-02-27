@@ -56,7 +56,9 @@ In the terminal run the command `npm run start:dev`
 
 ![MANIFEST](https://user-images.githubusercontent.com/111031708/221471557-57daa983-c794-4535-99b7-ea1d52f7eec2.png)
 
+
 ![SERVICEWORKERS](https://user-images.githubusercontent.com/111031708/221471569-441240e1-7656-4df9-8261-06c261367587.png)
+
 
 ![DATABASE](https://user-images.githubusercontent.com/111031708/221471578-7b856dd0-ffa7-4171-ae89-0711e07a2608.png)
 
@@ -69,13 +71,15 @@ In the terminal run the command `npm run start:dev`
 - Express : https://expressjs.com/
 - Express-session : https://www.npmjs.com/package/express-session
 - nodemon : https://www.npmjs.com/package/nodemon
-
-
+- codemirror: https://www.npmjs.com/package/codemirror
+- babel:  https://babeljs.io/
 
 ## Technology Used
 - JavaScript
 - Express node library
 - nodemon
+- Codemirror
+- babel 
 
 
 
