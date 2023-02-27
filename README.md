@@ -18,7 +18,7 @@
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Demo Video](#demo-video)
+- [Screenshots](#screenshots)
 - [Credits](#credits)
 - [Technology Used](#technology-used)
 - [License](#license)
@@ -43,7 +43,7 @@ git status
 
 In the terminal run the command `npm run start:dev`
 
-### Step 3:
+
 
 
 
@@ -52,10 +52,13 @@ In the terminal run the command `npm run start:dev`
 
 
 
-https://user-images.githubusercontent.com/111031708/219521299-09b82e03-a51c-4a80-97e1-78991988a9a8.mp4
 
 
+![MANIFEST](https://user-images.githubusercontent.com/111031708/221471557-57daa983-c794-4535-99b7-ea1d52f7eec2.png)
 
+![SERVICEWORKERS](https://user-images.githubusercontent.com/111031708/221471569-441240e1-7656-4df9-8261-06c261367587.png)
+
+![DATABASE](https://user-images.githubusercontent.com/111031708/221471578-7b856dd0-ffa7-4171-ae89-0711e07a2608.png)
 
 
 
@@ -64,21 +67,15 @@ https://user-images.githubusercontent.com/111031708/219521299-09b82e03-a51c-4a80
 
 - Node.js : https://www.stanleyulili.com/node/node-modules-import-and-use-functions-from-another-file/
 - Express : https://expressjs.com/
-- Insomnia Core : https://insomnia.rest/products/insomnia
 - Express-session : https://www.npmjs.com/package/express-session
-- MongoDb : https://www.mongodb.com/docs/manual/installation/
-- Mongoose Node Library : https://www.npmjs.com/package/mongoose
-- MomentJS: https://momentjs.com/
+- nodemon : https://www.npmjs.com/package/nodemon
 
 
 
 ## Technology Used
 - JavaScript
-- MongoDB
-- Moment node library
 - Express node library
-- Mongoose node library
-- Insomnia Core to test the Api routes.
+- nodemon
 
 
 
